@@ -4,9 +4,7 @@ public class Triangule {
 	
 	private double a;
 	private double b;
-	private double c;
-	private double area;
-	
+	private double c;	
 	
 	public Triangule(double a, double b, double c) {
 		this.a = a;
@@ -16,14 +14,13 @@ public class Triangule {
 	
 	public double area() {
 		double p = (this.a + this.b + this.c) / 2;
-		this.area =  Math.sqrt(p * (p - a) * (p - b) * (p - c));
-		return area;
+		return  Math.sqrt(p * (p - a) * (p - b) * (p - c));
 	}	
 
-	public void largerArea(double areaX, double areaY) {
+	public static void largerArea(double areaX, double areaY) {
 		if (areaX > areaY) System.out.println("Larger area: X");
 		else if (areaX < areaY) System.out.println("Larger area: Y");
-		else System.out.println("The areas are equal");
+		else System.out.println("The areas are equal!");
 	}
 	
 }

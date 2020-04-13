@@ -24,8 +24,8 @@ public class Main {
 		Triangule y = new Triangule(a, b, c);
 		System.out.printf("Triangle X area: %.4f%n", x.area());
 		System.out.printf("Triangle Y area: %.4f%n", y.area());
-		x.largerArea(x.area(), y.area());
-		
+		Triangule.largerArea(x.area(), y.area());
+				
 		scanner.close();		
 	}
 
