@@ -1,0 +1,1 @@
+Program that calculates the area of two different triangles, using the same class Triangle.
